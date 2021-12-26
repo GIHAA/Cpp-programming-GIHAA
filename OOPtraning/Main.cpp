@@ -8,5 +8,11 @@ int main(){
   std::cout<<sub(20, 20)<<std::endl;
   displayname(name);
 
-}
+  MyClass class1;
 
+  MyClass *ptr = &class1;
+
+  ptr ->  myPrint();
+  //class1.myPrint();
+
+}

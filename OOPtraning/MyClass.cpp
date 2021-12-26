@@ -1,5 +1,16 @@
 #include <iostream>
 #include <string>
+#include "MyClass.h"
+
+MyClass::MyClass(){
+
+
+}
+
+void MyClass::myPrint(){
+
+  std::cout << "Hello" << std::endl; 
+}
 
 int add (int x, int y){
 
@@ -18,7 +29,4 @@ void displayname(char name [10]){
 
 }
 
-
-
-//So, basically, MyClass::MyClass() refers to the MyClass() member function - or, in this case, constructor - of the MyClass class.
 
