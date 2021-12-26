@@ -8,7 +8,7 @@ int main(){
   std::cout<<sub(20, 20)<<std::endl;
   displayname(name);
 
-  MyClass class1;
+  MyClass class1(42,33);
 
   MyClass *ptr = &class1;
 

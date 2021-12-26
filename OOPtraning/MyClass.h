@@ -3,11 +3,13 @@
 #define MYCLASS_H
 
 
-class MyClass{
+class Mycclass{
 
   private:
+    int regvar;
+    int convar;
   public:
-    MyClass();
+    Mycclass(int a, int b);
     void myPrint();
 
 };

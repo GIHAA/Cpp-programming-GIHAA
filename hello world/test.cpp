@@ -1,34 +1,53 @@
 #include <iostream>
+#include <string>
 
-using namespace std;
+class Person {
 
+ public:
 
-class test
-{
-private:
-    /* data */
-public:
-    test(/* args */);
-    ~test();
+  Person(string n, Birthday b): name(n),bd(b){
+
+  }
+  void printInfo(){
+
+   cout << name << endl;
+   bd.printDate();
+
+  }
+
+ private:
+
+  string name;
+  Birthday bd;
+
 };
 
-test::test(/* args */)
-{
+class Birthday {
+
+    public:
+
+        Birthday(int m, int d, int y)
+            : month(m), day(d), year(y){
+
+     }
+    void printDate(){
+
+        cout<<month<<"/"<<day<<"/"<<year<<endl;
+
+     }
+
+ private:
+
+   int month;
+   int day;
+   int year;
+
+};
+
+int main (){
+
+    Birthday bd(4 , 29 , 2000);
+    Person p ("GIHAA", bd);
+    p.printInfo();
+
 }
-
-test::~test()
-{
-}
-
-
-int main( void ){
-
-    unsigned char x = -1;
-
-    int num = x;
-
-    cout << num;
-
-    return 0;
-}
-

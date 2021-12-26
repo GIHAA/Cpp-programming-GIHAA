@@ -2,10 +2,30 @@
 #include <string>
 #include "MyClass.h"
 
-MyClass::MyClass(){
+//MyClass::MyClass()(int a, int b)
+//: regvar(a), convar(b){
+
+   // std::cout<< regvar << std::endl;
+   // std::cout<< convar << std::endl;
+//}
+
+class MyClass{
+
+    private:
+        int regvar;
+        const int convar;
+    public:
+        MyClass(int a, int b): regvar(a), convar(b){
+
+          std::cout<<regvar<<std::endl;
+          
+        }
+        void myPrint();
 
 
-}
+};
+
+
 
 void MyClass::myPrint(){
 
