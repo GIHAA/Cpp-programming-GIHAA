@@ -8,4 +8,9 @@ int main(){
   std::cout<<sub(20, 20)<<std::endl;
   displayname(name);
 
+  MyClass class1;
+
+  class1.myPrint();
+
 }
+
