@@ -1,53 +1,35 @@
 #include <iostream>
-#include <string>
 
-class Person {
+using namespace std;
+
+
+class MyClass {
 
  public:
 
-  Person(string n, Birthday b): name(n),bd(b){
+  MyClass(int a) : var(a)
+
+  { }
+
+  void printInfo() {
+
+   cout << var<<endl;
+
+   cout << this->var<<endl;
+
+   cout << (*this).var<<endl; 
 
   }
-  void printInfo(){
-
-   cout << name << endl;
-   bd.printDate();
-
-  }
-
  private:
 
-  string name;
-  Birthday bd;
+  int var;
 
 };
 
-class Birthday {
+int main(){
 
-    public:
+  MyClass c1(20);
+  c1.printInfo();
 
-        Birthday(int m, int d, int y)
-            : month(m), day(d), year(y){
-
-     }
-    void printDate(){
-
-        cout<<month<<"/"<<day<<"/"<<year<<endl;
-
-     }
-
- private:
-
-   int month;
-   int day;
-   int year;
-
-};
-
-int main (){
-
-    Birthday bd(4 , 29 , 2000);
-    Person p ("GIHAA", bd);
-    p.printInfo();
 
 }
